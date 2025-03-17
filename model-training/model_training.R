@@ -37,10 +37,8 @@ message("Libraries loaded. ")
 
 # Setup -------------------------------------------------------------------
 
-
 purrr::walk(list.files("utils", full.names = T), ~source(.x))
 
-# Source files
 params <-
   list(
     seed = 12,
@@ -50,7 +48,7 @@ params <-
     result_lists = "result-lists",
     data_path = if (on_cluster) {...} else {...},  # Location of the data
     outputs_path = if (on_cluster) {...} else {...}, # Location to store results
-    lambda_range  =10^seq(log10(1e-4), log10(1), length.out = 9) %>% round(5),
+    lambda_range = 10^seq(log10(1e-4), log10(1), length.out = 9) %>% round(5),
     k = 10
   )
 
@@ -205,7 +203,6 @@ binary_vars <- df_current %>% select(where(is_binary)) %>% names()
 
 message("Z-normalizing data...")
 
-# Scaling
 znorm_data <- df_train %>%
   dplyr::select(-eid, -any_of(binary_vars), -incident_event, -event_agediff) %>%
   tidyr::gather(key = "variable", value = "value") %>%
@@ -217,7 +214,6 @@ znorm_data <- df_train %>%
   ) %>%
   dplyr::ungroup()
 
-# Z-normalize
 df_train_preprocessed <- df_train %>%
   znormalize_data(znorm_data =  znorm_data) 
 

@@ -1,4 +1,4 @@
-on_cluster = F
+on_cluster = T
 setwd("~/survivalfm-analysis/model-training")
 
 full_start_time <- Sys.time()
@@ -22,7 +22,7 @@ if (on_cluster) {
   
   Sys.setenv('SLURM_CPUS_PER_TASK' = 5)
   
-  array_index <- 1
+  array_index <- ...
   
 }
 
@@ -41,19 +41,16 @@ message("Libraries loaded. ")
 
 purrr::walk(list.files("utils", full.names = T), ~source(.x))
 
-# Source files
 params <-
   list(
     seed = 12,
     survival_time = 10,
     nfolds_inner = 10,
     list_path = "model_list_qrisk.tsv",
-    result_lists = "result-lists",
-    data_path = if (on_cluster) {"/m/cs/scratch/ukbiobank-kepaco"} else {"~/ukbiobank-kepaco"},
-    outputs_path = if (on_cluster) {"/m/cs/scratch/ukbiobank-kepaco/tmp-heli/results-scotland-qrisk"} else {"results-scotland-qrisk"},
-    # data_path = if (on_cluster) {...} else {...},  # Location of the data
-    # outputs_path = if (on_cluster) {...} else {...}, # Location to store results
-    lambda_range  =10^seq(log10(1e-4), log10(1), length.out = 9) %>% round(5),
+    result_lists = "result-lists-qrisk",
+    data_path = if (on_cluster) {...} else {...},  # Location of the data
+    outputs_path = if (on_cluster) {...} else {...}, # Location to store results
+    lambda_range = 10^seq(log10(1e-4), log10(1), length.out = 9) %>% round(5),
     k = 10
   )
 
@@ -215,7 +212,6 @@ binary_vars <- df_current %>% select(where(is_binary)) %>% names()
 
 message("Z-normalizing data...")
 
-# Scaling
 znorm_data <- df_train %>%
   dplyr::select(-eid, -any_of(binary_vars), -incident_event, -event_agediff) %>%
   tidyr::gather(key = "variable", value = "value") %>%
@@ -227,7 +223,6 @@ znorm_data <- df_train %>%
   ) %>%
   dplyr::ungroup()
 
-# Z-normalize
 df_train_preprocessed <- df_train %>%
   znormalize_data(znorm_data =  znorm_data) 
 

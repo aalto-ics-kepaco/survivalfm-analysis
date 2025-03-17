@@ -1,0 +1,100 @@
+endpoint_var	endpoint_name	included_icd10_codes	input_name	training_method	idx
+ALZ	Alzheimer's disease	F00;G30	Standard risk factors	Standard Cox regression	1
+CKD	Chronic kidney disease	N18	Standard risk factors	Standard Cox regression	2
+DIAB	Type 2 diabetes	E11;E14	Standard risk factors	Standard Cox regression	3
+LIVER	Liver disease	K70;K71;K72;K73;K74;K75;K76;K77	Standard risk factors	Standard Cox regression	4
+LUNG_CANC	Lung cancer	C33;C34	Standard risk factors	Standard Cox regression	5
+MI	Myocardial infarction	I21;I22	Standard risk factors	Standard Cox regression	6
+OST	Osteoporosis	M81;M80	Standard risk factors	Standard Cox regression	7
+STR	Stroke	I60;I61;I63;I64	Standard risk factors	Standard Cox regression	8
+VASC	Vascular and other dementia	F01;F02;F03	Standard risk factors	Standard Cox regression	9
+ALZ	Alzheimer's disease	F00;G30	Clinical biochemistry and blood counts	Standard Cox regression	10
+CKD	Chronic kidney disease	N18	Clinical biochemistry and blood counts	Standard Cox regression	11
+DIAB	Type 2 diabetes	E11;E14	Clinical biochemistry and blood counts	Standard Cox regression	12
+LIVER	Liver disease	K70;K71;K72;K73;K74;K75;K76;K77	Clinical biochemistry and blood counts	Standard Cox regression	13
+LUNG_CANC	Lung cancer	C33;C34	Clinical biochemistry and blood counts	Standard Cox regression	14
+MI	Myocardial infarction	I21;I22	Clinical biochemistry and blood counts	Standard Cox regression	15
+OST	Osteoporosis	M81;M80	Clinical biochemistry and blood counts	Standard Cox regression	16
+STR	Stroke	I60;I61;I63;I64	Clinical biochemistry and blood counts	Standard Cox regression	17
+VASC	Vascular and other dementia	F01;F02;F03	Clinical biochemistry and blood counts	Standard Cox regression	18
+ALZ	Alzheimer's disease	F00;G30	Metabolomics biomarkers	Standard Cox regression	19
+CKD	Chronic kidney disease	N18	Metabolomics biomarkers	Standard Cox regression	20
+DIAB	Type 2 diabetes	E11;E14	Metabolomics biomarkers	Standard Cox regression	21
+LIVER	Liver disease	K70;K71;K72;K73;K74;K75;K76;K77	Metabolomics biomarkers	Standard Cox regression	22
+LUNG_CANC	Lung cancer	C33;C34	Metabolomics biomarkers	Standard Cox regression	23
+MI	Myocardial infarction	I21;I22	Metabolomics biomarkers	Standard Cox regression	24
+OST	Osteoporosis	M81;M80	Metabolomics biomarkers	Standard Cox regression	25
+STR	Stroke	I60;I61;I63;I64	Metabolomics biomarkers	Standard Cox regression	26
+VASC	Vascular and other dementia	F01;F02;F03	Metabolomics biomarkers	Standard Cox regression	27
+ALZ	Alzheimer's disease	F00;G30	Polygenic risk scores	Standard Cox regression	28
+CKD	Chronic kidney disease	N18	Polygenic risk scores	Standard Cox regression	29
+DIAB	Type 2 diabetes	E11;E14	Polygenic risk scores	Standard Cox regression	30
+LIVER	Liver disease	K70;K71;K72;K73;K74;K75;K76;K77	Polygenic risk scores	Standard Cox regression	31
+LUNG_CANC	Lung cancer	C33;C34	Polygenic risk scores	Standard Cox regression	32
+MI	Myocardial infarction	I21;I22	Polygenic risk scores	Standard Cox regression	33
+OST	Osteoporosis	M81;M80	Polygenic risk scores	Standard Cox regression	34
+STR	Stroke	I60;I61;I63;I64	Polygenic risk scores	Standard Cox regression	35
+VASC	Vascular and other dementia	F01;F02;F03	Polygenic risk scores	Standard Cox regression	36
+ALZ	Alzheimer's disease	F00;G30	Standard risk factors	survivalFM	37
+CKD	Chronic kidney disease	N18	Standard risk factors	survivalFM	38
+DIAB	Type 2 diabetes	E11;E14	Standard risk factors	survivalFM	39
+LIVER	Liver disease	K70;K71;K72;K73;K74;K75;K76;K77	Standard risk factors	survivalFM	40
+LUNG_CANC	Lung cancer	C33;C34	Standard risk factors	survivalFM	41
+MI	Myocardial infarction	I21;I22	Standard risk factors	survivalFM	42
+OST	Osteoporosis	M81;M80	Standard risk factors	survivalFM	43
+STR	Stroke	I60;I61;I63;I64	Standard risk factors	survivalFM	44
+VASC	Vascular and other dementia	F01;F02;F03	Standard risk factors	survivalFM	45
+ALZ	Alzheimer's disease	F00;G30	Clinical biochemistry and blood counts	survivalFM	46
+CKD	Chronic kidney disease	N18	Clinical biochemistry and blood counts	survivalFM	47
+DIAB	Type 2 diabetes	E11;E14	Clinical biochemistry and blood counts	survivalFM	48
+LIVER	Liver disease	K70;K71;K72;K73;K74;K75;K76;K77	Clinical biochemistry and blood counts	survivalFM	49
+LUNG_CANC	Lung cancer	C33;C34	Clinical biochemistry and blood counts	survivalFM	50
+MI	Myocardial infarction	I21;I22	Clinical biochemistry and blood counts	survivalFM	51
+OST	Osteoporosis	M81;M80	Clinical biochemistry and blood counts	survivalFM	52
+STR	Stroke	I60;I61;I63;I64	Clinical biochemistry and blood counts	survivalFM	53
+VASC	Vascular and other dementia	F01;F02;F03	Clinical biochemistry and blood counts	survivalFM	54
+ALZ	Alzheimer's disease	F00;G30	Metabolomics biomarkers	survivalFM	55
+CKD	Chronic kidney disease	N18	Metabolomics biomarkers	survivalFM	56
+DIAB	Type 2 diabetes	E11;E14	Metabolomics biomarkers	survivalFM	57
+LIVER	Liver disease	K70;K71;K72;K73;K74;K75;K76;K77	Metabolomics biomarkers	survivalFM	58
+LUNG_CANC	Lung cancer	C33;C34	Metabolomics biomarkers	survivalFM	59
+MI	Myocardial infarction	I21;I22	Metabolomics biomarkers	survivalFM	60
+OST	Osteoporosis	M81;M80	Metabolomics biomarkers	survivalFM	61
+STR	Stroke	I60;I61;I63;I64	Metabolomics biomarkers	survivalFM	62
+VASC	Vascular and other dementia	F01;F02;F03	Metabolomics biomarkers	survivalFM	63
+ALZ	Alzheimer's disease	F00;G30	Polygenic risk scores	survivalFM	64
+CKD	Chronic kidney disease	N18	Polygenic risk scores	survivalFM	65
+DIAB	Type 2 diabetes	E11;E14	Polygenic risk scores	survivalFM	66
+LIVER	Liver disease	K70;K71;K72;K73;K74;K75;K76;K77	Polygenic risk scores	survivalFM	67
+LUNG_CANC	Lung cancer	C33;C34	Polygenic risk scores	survivalFM	68
+MI	Myocardial infarction	I21;I22	Polygenic risk scores	survivalFM	69
+OST	Osteoporosis	M81;M80	Polygenic risk scores	survivalFM	70
+STR	Stroke	I60;I61;I63;I64	Polygenic risk scores	survivalFM	71
+VASC	Vascular and other dementia	F01;F02;F03	Polygenic risk scores	survivalFM	72
+ALZ	Alzheimer's disease	F00;G30	Standard risk factors	Standard Cox regression with interaction terms	73
+CKD	Chronic kidney disease	N18	Standard risk factors	Standard Cox regression with interaction terms	74
+DIAB	Type 2 diabetes	E11;E14	Standard risk factors	Standard Cox regression with interaction terms	75
+LIVER	Liver disease	K70;K71;K72;K73;K74;K75;K76;K77	Standard risk factors	Standard Cox regression with interaction terms	76
+LUNG_CANC	Lung cancer	C33;C34	Standard risk factors	Standard Cox regression with interaction terms	77
+MI	Myocardial infarction	I21;I22	Standard risk factors	Standard Cox regression with interaction terms	78
+OST	Osteoporosis	M81;M80	Standard risk factors	Standard Cox regression with interaction terms	79
+STR	Stroke	I60;I61;I63;I64	Standard risk factors	Standard Cox regression with interaction terms	80
+VASC	Vascular and other dementia	F01;F02;F03	Standard risk factors	Standard Cox regression with interaction terms	81
+ALZ	Alzheimer's disease	F00;G30	All	Standard Cox regression	82
+CKD	Chronic kidney disease	N18	All	Standard Cox regression	83
+DIAB	Type 2 diabetes	E11;E14	All	Standard Cox regression	84
+LIVER	Liver disease	K70;K71;K72;K73;K74;K75;K76;K77	All	Standard Cox regression	85
+LUNG_CANC	Lung cancer	C33;C34	All	Standard Cox regression	86
+MI	Myocardial infarction	I21;I22	All	Standard Cox regression	87
+OST	Osteoporosis	M81;M80	All	Standard Cox regression	88
+STR	Stroke	I60;I61;I63;I64	All	Standard Cox regression	89
+VASC	Vascular and other dementia	F01;F02;F03	All	Standard Cox regression	90
+ALZ	Alzheimer's disease	F00;G30	All	survivalFM	91
+CKD	Chronic kidney disease	N18	All	survivalFM	92
+DIAB	Type 2 diabetes	E11;E14	All	survivalFM	93
+LIVER	Liver disease	K70;K71;K72;K73;K74;K75;K76;K77	All	survivalFM	94
+LUNG_CANC	Lung cancer	C33;C34	All	survivalFM	95
+MI	Myocardial infarction	I21;I22	All	survivalFM	96
+OST	Osteoporosis	M81;M80	All	survivalFM	97
+STR	Stroke	I60;I61;I63;I64	All	survivalFM	98
+VASC	Vascular and other dementia	F01;F02;F03	All	survivalFM	99

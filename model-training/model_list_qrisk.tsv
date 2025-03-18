@@ -1,0 +1,4 @@
+endpoint_var	endpoint_name	included_icd10_codes	display_name	training_method	input_name
+CVD	Cardiovascular disease	G45;I63;I64;I20;I21;I22;I23;I24;I25	Linear terms (standard Cox)	Standard Cox regression	QRISK3
+CVD	Cardiovascular disease	G45;I63;I64;I20;I21;I22;I23;I24;I25	Linear terms + QRISK3 interaction terms with age (standard Cox)	Standard Cox regression	QRISK3
+CVD	Cardiovascular disease	G45;I63;I64;I20;I21;I22;I23;I24;I25	Linear terms + factorized interaction terms (survivalFM)	survivalFM	QRISK3
